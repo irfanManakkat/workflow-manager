@@ -6,25 +6,26 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.time.OffsetDateTime;
+
 @Entity
 @Getter
 @Setter
 @ToString
-public class WorkFlowProfileActivity {
+public class TransactionActivityLog {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String transactionNo;
+
     private Long activityId;
 
     private String operation;
-
-    private Integer order;
 
     @Column(length = 100)
     @Enumerated(EnumType.STRING)
     private Activity activity;
 
-    private String reference;
-    private String condition;
+    private String userId;
 
+    private OffsetDateTime activityTime;
 }
