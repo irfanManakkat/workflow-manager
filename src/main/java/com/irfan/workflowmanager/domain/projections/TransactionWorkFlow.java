@@ -21,7 +21,7 @@ public class TransactionWorkFlow {
     @Id
     private String transactionNo;
 
-    private String profileId;
+    private Long profileId;
     private String tenantId;
     private String channel;
     private String agentLocationId;

@@ -8,6 +8,7 @@ import lombok.Getter;
 public enum Activity {
 
     SYSTEM_TASK("System Task", false),
+    SYSTEM_TASK2("System Task", false),
     PAYMENT_AUTHORIZATION("Payment Authorization", true),
     FUND_AUTHORIZATION("Fund Authorization", true)
 
