@@ -74,7 +74,7 @@ public class WorkflowManagerServiceImpl implements WorkflowManagerService {
 
     private void executeActivity(String transactionNo, Activity activity) {
         // Execute the activity
-        activityServices.get(activity.name()).performActivity(transactionNo);
+        activityServices.get(activity.getClassName()).performActivity(transactionNo);
     }
 
     private Integer getOrder(Activity activity, List<WorkFlowProfileActivity> profileActivities) {
