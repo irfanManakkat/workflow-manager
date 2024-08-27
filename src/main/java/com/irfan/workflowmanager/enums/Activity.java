@@ -7,14 +7,13 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum Activity {
 
-    SYSTEM_TASK("System Task", false, "SystemTaskService"),
-    SYSTEM_TASK2("System Task", false, "SystemTask2Service"),
-    PAYMENT_AUTHORIZATION("Payment Authorization", true, "PaymentAuthorizationService"),
-    FUND_AUTHORIZATION("Fund Authorization", true, "FundAuthorizationService"),
+    ACTIVITY_1("System Task",  "activity1Service"),
+    ACTIVITY_2("System Task",  "activity2Service"),
+    PAYMENT_AUTHORIZATION("Payment Authorization", "authorizationActivityService"),
+    FUND_AUTHORIZATION("Fund Authorization", "authorizationActivityService"),
 
     ;
 
     private final String description;
-    private final boolean authorization;
     private final String className;
 }
